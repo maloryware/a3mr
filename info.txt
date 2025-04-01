@@ -1,0 +1,5 @@
+https://community.bistudio.com/wiki/Arma_3:_Creating_an_Addon
+https://insignia.alex109.de/create
+https://ace3.acemod.org/wiki/
+https://cbateam.github.io/CBA_A3/docs/files/overview-txt.html
+https://github.com/CBATeam/CBA_A3/wiki
