@@ -1,5 +1,12 @@
 #include "define.hpp"
 
+/*
+ * to implement:
+ * - torture/interrogation
+ * - custom backpack
+ * - fireproof equipment
+ */  
+
 class CfgPatches {
     
 	class A3_EpsilonSix {
@@ -14,5 +21,5 @@ class CfgPatches {
     };
 };
 
-class Extended_PreInit_EventHandlers { XEH(preInit); };
-class Extended_PostInit_EventHandlers { XEH(postInit); };
+// class Extended_PreInit_EventHandlers { XEH(preInit); };
+// class Extended_PostInit_EventHandlers { XEH(postInit); };

@@ -1,3 +1,5 @@
+#define true 1
+#define false 0
 #define PREFIX scratchware
 #define COMPONENT A3_MyMod
 #define PRETTY Mod Template
