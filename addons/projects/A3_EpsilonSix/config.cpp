@@ -1,4 +1,5 @@
 #include "define.hpp"
+#include "insignias.hpp"
 
 /*
  * to implement:
