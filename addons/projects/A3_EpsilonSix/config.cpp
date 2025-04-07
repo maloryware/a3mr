@@ -6,6 +6,7 @@
  * - torture/interrogation
  * - custom backpack
  * - fireproof equipment
+ * - add LR radio compat to other backpacks
  */  
 
 class CfgPatches {
@@ -22,5 +23,5 @@ class CfgPatches {
     };
 };
 
-// class Extended_PreInit_EventHandlers { XEH(preInit); };
-// class Extended_PostInit_EventHandlers { XEH(postInit); };
+class Extended_PreInit_EventHandlers { XEH(functions\base\preInit); };
+class Extended_PostInit_EventHandlers { XEH(functions\base\postInit); };

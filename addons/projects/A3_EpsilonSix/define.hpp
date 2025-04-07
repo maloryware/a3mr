@@ -27,6 +27,7 @@
 
 #define MODEL(var) #PATH(data\models\var.p3d)
 #define PAA(var) #PATH(data\var.paa)
+#define ICON(var) #PATH(data\icon\var.paa)
 #define TEXTURE(var) #PATH(data\textures\var.paa)
 
 ////////////////////////////////
