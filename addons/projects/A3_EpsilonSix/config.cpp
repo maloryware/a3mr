@@ -7,6 +7,8 @@
  * - custom backpack
  * - fireproof equipment
  * - add LR radio compat to other backpacks
+ * - blood samples/empty syringe
+ * - non-lethal tranq rounds
  */  
 
 class CfgPatches {
