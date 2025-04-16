@@ -1,5 +1,5 @@
 #include "define.hpp"
-#include "insignias.hpp"
+#include "data/config/CfgUnitInsignia_EP6.hpp"
 
 /*
  * to implement:
@@ -7,6 +7,7 @@
  * - custom backpack
  * - fireproof equipment
  * - add LR radio compat to other backpacks
+ * - injectable RFID tracker
  */  
 
 class CfgPatches {
@@ -22,6 +23,14 @@ class CfgPatches {
         weapons[] = {};
     };
 };
+
+class CfgUnitInsignia {
+	#include "data/config/CfgUnitInsignia_EP6.hpp"
+};
+
+class CfgAmmo {
+	#include "data/config/CfgAmmo_NonLethal.hpp"
+}
 
 class Extended_PreInit_EventHandlers { XEH(functions\base\preInit); };
 class Extended_PostInit_EventHandlers { XEH(functions\base\postInit); };
