@@ -1,5 +1,5 @@
 #include "define.hpp"
-#include "insignias.hpp"
+#include "data/config/CfgUnitInsignia_EP6.hpp"
 
 /*
  * to implement:
@@ -9,6 +9,7 @@
  * - add LR radio compat to other backpacks
  * - blood samples/empty syringe
  * - non-lethal tranq rounds
+ * - injectable RFID tracker
  */  
 
 class CfgPatches {
@@ -24,6 +25,14 @@ class CfgPatches {
         weapons[] = {};
     };
 };
+
+class CfgUnitInsignia {
+	#include "data/config/CfgUnitInsignia_EP6.hpp"
+};
+
+class CfgAmmo {
+	#include "data/config/CfgAmmo_NonLethal.hpp"
+}
 
 class Extended_PreInit_EventHandlers { XEH(functions\base\preInit); };
 class Extended_PostInit_EventHandlers { XEH(functions\base\postInit); };
