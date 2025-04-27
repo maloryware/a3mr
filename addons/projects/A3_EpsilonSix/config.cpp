@@ -27,11 +27,26 @@ class CfgPatches {
 };
 
 class CfgUnitInsignia {
-	#include "data/config/CfgUnitInsignia_EP6.hpp"
+	#include "data/config/misc/CfgUnitInsignia_EP6.hpp"
 };
 
 class CfgAmmo {
-	#include "data/config/CfgAmmo_NonLethal.hpp"
+	#include "data/config/ammo/CfgAmmo_NonLethal.hpp"
+}
+
+class CfgMagazines {
+	#include "data/config/magazines/CfgMagazines_NonLethal.hpp"
+}
+
+class ACE_Medical_Injuries {
+	
+	class wounds {
+		#include "data/config/medical/WoundType_NonLethal.hpp"
+	}
+	
+	class damageTypes {
+		#include "data/config/medical/DamageType_NonLethal.hpp"
+	}
 }
 
 class Extended_PreInit_EventHandlers { XEH(functions\base\preInit); };

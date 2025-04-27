@@ -32,4 +32,16 @@
 
 ////////////////////////////////
 
-#define TAG_AA(var) FLOOR(AA,var)
+#define TAG_PAA(var) FLOOR(PAA,var)
+
+//
+#define TFAR_BACKPACK(radioRange) \
+    tf_dialogUpdate = "call TFAR_fnc_updateLRDialogToChannel;"; \
+    tf_hasLRradio = 1;                                          \
+    tf_encryptionCode = "tf_west_radio_code";                   \
+    tf_dialog = "rt1523g_radio_dialog";                         \
+    tf_subtype = "digital_lr";                                  \
+    tf_range = radioRange;
+#define TFAR_SR TFAR_BACKPACK(5000)
+#define TFAR_MR TFAR_BACKPACK(10000)
+#define TFAR_LR TFAR_BACKPACK(45000)
